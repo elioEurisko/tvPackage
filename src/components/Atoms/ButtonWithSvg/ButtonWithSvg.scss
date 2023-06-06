@@ -1,0 +1,28 @@
+.svg-button {
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  svg,
+  .spinner-border {
+    margin-inline-end: 10px;
+  }
+  &.no-margin {
+    svg {
+      margin: 0;
+    }
+  }
+}
+
+.btn-danger-inverted {
+  color: var(--light-red) !important;
+  border: none !important;
+  background-color: transparent !important;
+  // font-size: inherit !important;
+}
+.chooseFromLibraryInAlbum {
+  border: 0 !important;
+  padding: 3px !important;
+  transform: translateX(-3px);
+}

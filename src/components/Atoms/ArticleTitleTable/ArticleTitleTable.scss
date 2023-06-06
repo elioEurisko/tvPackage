@@ -1,0 +1,27 @@
+.article-title {
+    display: flex;
+    align-items: center;
+    .info{
+      width: calc(100% - 76px);
+    .subTitle{
+      color: #a8acc1;
+      display: block;
+    }
+  }
+    .img{
+      line-height: 0;
+      overflow: hidden;
+      margin-inline-end:10px;
+      width:66px;
+      border-radius: 4px;
+      height: 48px;
+      background-size:100%;
+      background-repeat: no-repeat;
+      display: flex!important;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      border: 1px solid var( --secondary-color);
+      background-color: var(--tint-light-grey);
+  }
+  }

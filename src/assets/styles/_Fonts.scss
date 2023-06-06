@@ -1,0 +1,26 @@
+$bold:"Poppins-Bold","AlQabas-Bold",sans-serif;
+$medium:"Poppins-Medium","AlQabas-Regular",sans-serif;
+$regular:"Poppins-Regular","AlQabas-Regular",sans-serif;
+
+/* font size & line height in px */
+
+$font-size-body-px: 16;
+$line-height-px: 21;
+
+
+
+@mixin setFont($font,$size:0) {
+  @if $size!=0{
+    font-size:#{$size/16}rem!important;
+  }
+    @if $font == "medium" {
+        font-family: $medium!important;
+      }
+      @if $font == "bold" {
+        font-family: $bold!important;
+      }
+      @if $font == "regular" {
+        font-family: $regular!important;
+      }
+  }
+  
