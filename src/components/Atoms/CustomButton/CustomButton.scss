@@ -1,0 +1,42 @@
+
+.button {
+   border-color: var(--primary-color);
+   color: var(--primary-color);
+   &:focus {
+    background-color: var(--primary-color);
+    color: var(--white);
+    .leftIcon {
+        filter: 
+        sepia(1)
+        hue-rotate(200deg)
+        brightness(2);
+        }
+   }
+   &:hover {
+    background-color: var(--primary-color);
+    .leftIcon {
+        width:15px;
+        filter: 
+        sepia(1)
+        hue-rotate(200deg)
+        brightness(2);
+    }
+   }
+}
+
+.button-font {
+    font-size: 13px;
+    font-family: 'Poppins-Medium',"AlQabas-Regular",sans-serif;
+}
+
+.leftIcon {
+    padding-top: 4px;
+    margin-inline-end: 10px;
+    padding-bottom: 4px;
+}
+
+.rightIcon {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-inline-start: 10px;
+}
