@@ -12,6 +12,7 @@ import DatePicker from "./Atoms/DatePicker/DatePicker";
 import FormikField from "./Atoms/FormikField/FormikField";
 import CustomError from "./Atoms/CustomError/CustomError";
 import CaricatureUploadContainer from "./Atoms/CaricatureUploadContainer/CaricatureUploadContainer";
+import ColorPicker from "./Atoms/ColorPicker/ColorPicker";
 
 import TitleWithSwitch from "./Molecules/TitleWithSwitch/TitleWithSwitch";
 
@@ -31,6 +32,7 @@ export {
   FormikField,
   CustomError,
   CaricatureUploadContainer,
+  ColorPicker,
   //Molecules
   TitleWithSwitch,
 };
