@@ -1,0 +1,52 @@
+@import "./colors";
+.container {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  &.isHomePage{
+   margin-top: 140px; 
+  }
+  .text404 {
+    color: $white;
+    font-size: 34px;
+    font-family: Alilato-Regular;
+    @media (max-width: 1281px) {
+      font-size: 30px;
+    }
+  }
+  .textBox {
+    margin-bottom: 128px;
+    @media (max-width: 1281px) {
+      margin-bottom: 60px;
+    }
+  }
+  .secondText404 {
+    color: $secondText404;
+    font-size: 24px;
+    @media (max-width: 1281px) {
+      font-size: 20px;
+    }
+  }
+  .errorImage {
+    width: 220px;
+    height: 220px;
+    @media (max-width: 1281px) {
+      width: 190px;
+      height: 190px;
+    }
+  }
+  .goBackToHomePage {
+    width: 100% !important;
+    font-size: 32px !important;
+    border-radius: 10px !important;
+    font-family: Alilato-ExtraBold !important;
+    box-shadow: none !important;
+    &:hover {
+      background-color: $background !important;
+    }
+
+    @media (max-width: 1282px) {
+      font-size: 24px !important;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../../styles/mixins.scss";
+
+.appTextContainer {
+  &.bold {
+    font-family: Alilato-Bold;
+  }
+
+  &.maxOneRow {
+    @include restrictNbrLines(1);
+  }
+
+  &.maxTwoRows {
+    @include restrictNbrLines(2);
+  }
+
+  &.maxThreeRows {
+    @include restrictNbrLines(3);
+  }
+}

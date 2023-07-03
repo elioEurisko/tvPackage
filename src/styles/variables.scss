@@ -1,0 +1,11 @@
+@use "./fonts" as *;
+$header-height: fit-content;
+$footer-height: 306px;
+
+$sm: getSize(576);
+$md: getSize(768);
+$lg: getSize(992);
+$xl: getSize(1200);
+$laptop: getSize(1366);
+$xxl: getSize(2499);
+$highres: getSize(2500);

@@ -1,0 +1,55 @@
+.bufferContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+
+  .bufferWrapper {
+    position: relative;
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingSpinnerEclipse {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: transparent;
+
+  .innerLoader {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+
+    div {
+      animation: spinner 0.8s linear infinite;
+      border-radius: 50%;
+      box-sizing: content-box;
+    }
+  }
+}

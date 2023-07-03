@@ -1,3 +1,4 @@
-import "./assets/styles/globals.scss";
+// import "./assets/styles/globals.scss";
 
-export * from "./components";
+// export * from "./components";
+export * from "./pages";

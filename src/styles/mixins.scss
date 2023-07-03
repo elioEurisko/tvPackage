@@ -1,0 +1,16 @@
+@use "sass:math";
+@use "./fonts" as *;
+@import "./variables";
+
+@mixin restrictNbrLines($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin setAspectRatio($width, $height) {
+  width: 100%;
+  padding-top: math.div($height, $width) * 100%;
+  position: relative;
+}

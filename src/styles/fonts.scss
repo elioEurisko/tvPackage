@@ -1,0 +1,18 @@
+@use "sass:math";
+
+$font-size-px: 16;
+
+@function getSize($size: $font-size-px) {
+  @return #{math.div($size, $font-size-px)}rem;
+}
+
+@mixin setFontSize($size: $font-size-px) {
+  @if $size!=0 {
+    font-size: getSize($size);
+  }
+}
+
+@mixin setFont($size, $font) {
+  @include setFontSize($size);
+  // TODO: handle font family
+}

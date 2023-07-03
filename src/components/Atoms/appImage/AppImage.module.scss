@@ -1,0 +1,9 @@
+.appImageContainer {
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .imageCover {
+    object-fit: cover;
+  }
+}

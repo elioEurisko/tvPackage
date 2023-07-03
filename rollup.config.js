@@ -2,7 +2,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
 import json from "@rollup/plugin-json";
-import svg from "rollup-plugin-svg-import";
+// import svg from "rollup-plugin-svg-import";
 import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import { babel } from "@rollup/plugin-babel";
@@ -24,7 +24,7 @@ export default [
         sourcemap: true,
       },
     ],
-    plugins: [babel(), peerDepsExternal(), resolve(), json(), commonjs(), postcss(), svg(), terser()],
+    plugins: [babel(), peerDepsExternal(), resolve(), json(), commonjs(), postcss(), terser()],
     external: Object.keys(packageJson.dependencies),
   },
 ];
